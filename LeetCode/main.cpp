@@ -10,10 +10,11 @@
 #include "TwoSum.h"
 #include "MedianOfTwoSortedArrays.h"
 #include "LongestSubstringWithoutRepeatingCharacters.h"
+#include "AddTwoNumbers.h"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    LongestSubstringWithoutRepeatingCharactersTest test;
+    AddTwoNumbersTest test;
     test.test();
     return 0;
 }

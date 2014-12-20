@@ -24,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		D21CEC2A1A45D58100CE17C8 /* AddTwoNumbers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTwoNumbers.h; sourceTree = "<group>"; };
+		D21CEC2B1A45FF4800CE17C8 /* LongestPalindromicSubstring .h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LongestPalindromicSubstring .h"; sourceTree = "<group>"; };
 		D268F8AA1A0B23E800C09C37 /* LeetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		D268F8AD1A0B23E800C09C37 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		D268F8B41A0B240500C09C37 /* TwoSum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoSum.h; sourceTree = "<group>"; };
@@ -66,6 +67,7 @@
 				D27AE3EC1A0B51BA00DD18E1 /* MedianOfTwoSortedArrays.h */,
 				D27AE3ED1A0B8B0300DD18E1 /* LongestSubstringWithoutRepeatingCharacters.h */,
 				D21CEC2A1A45D58100CE17C8 /* AddTwoNumbers.h */,
+				D21CEC2B1A45FF4800CE17C8 /* LongestPalindromicSubstring .h */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";

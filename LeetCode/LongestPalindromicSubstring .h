@@ -14,6 +14,7 @@
 #define LeetCode_LongestPalindromicSubstring__h
 #include <iostream>
 #include <string>
+#include <algorithm>
 using namespace std;
 //O(n*n)
 class LongestPalindromicSubstring {
@@ -53,15 +54,90 @@ public:
         }
         return substring;
     }
+   // 我认为给出的算法有点问题。用这个test，测出的结果不一样。需要研究一下。
+    string preProcess(string s) {
+        if(s.length() < 1)
+            return "^$";
+        string ret = "^#";
+        for (int i = 0; i < s.length(); i ++) {
+            ret += s[i] + "#";
+        }
+        ret += "$";
+        return ret;
+    }
+    string longestPalindrome2(string s) {
+        /*string news = preProcess(s);
+        int mx = 0, id = 0;
+        int len = news.length();
+        int *p = new int[len];
+        for (int i = 1; i < news.length(); i ++) {
+            if (mx > i) {
+                p[i] = min(p[2 * id - i], mx - i);
+            } else {
+                p[i] = 0;
+            }
+            for (; news[i + p[i] + 1] == news[i - p[i] - 1]; p[i] ++)
+                ;
+            if (( i + p[i] ) > mx ) {
+                mx = i + p[i];
+                id = i;
+            }
+        }
+        int maxLen = 0;
+        int centerIndex = 0;
+        for ( int i = 1; i < news.length(); i ++) {
+            if (p[i] > maxLen) {
+                maxLen = p[i];
+                centerIndex = i;
+            }
+        }
+        delete[] p;
+        return s.substr((centerIndex - maxLen - 1 ) / 2, maxLen);*/
+        string T = preProcess(s);
+        int n = T.length();
+        int *P = new int[n];
+        int C = 0, R = 0;
+        for (int i = 1; i < n-1; i++) {
+            int i_mirror = 2*C-i; // equals to i' = C - (i-C)
+            
+            P[i] = (R > i) ? min(R-i, P[i_mirror]) : 0;
+            
+            // Attempt to expand palindrome centered at i
+            while (T[i + 1 + P[i]] == T[i - 1 - P[i]])
+                P[i]++;
+            
+            // If palindrome centered at i expand past R,
+            // adjust center based on expanded palindrome.
+            if (i + P[i] > R) {
+                C = i;
+                R = i + P[i];
+            }
+        }
+        
+        // Find the maximum element in P.
+        int maxLen = 0;
+        int centerIndex = 0;
+        for (int i = 1; i < n-1; i++) {
+            if (P[i] > maxLen) {
+                maxLen = P[i];
+                centerIndex = i;
+            }
+        }
+        delete[] P;
+        
+        return s.substr((centerIndex - 1 - maxLen)/2, maxLen);
+    }
+    
 };
-// O(n)
+// Manacher’s algorithm
+
 
 class LongestPalindromicSubstringTest {
 public:
     void test() {
-        string s = "abbbbb";
+        string s = "babcbabcbaccba";
         LongestPalindromicSubstring solution;
-        string result = solution.longestPalindrome(s);
+        string result = solution.longestPalindrome2(s);
         cout << result << endl;
         return;
     }

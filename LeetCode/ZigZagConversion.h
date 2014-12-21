@@ -15,6 +15,9 @@ using namespace std;
 class ZigZagConversion {
 public:
     string convert(string s, int nRows) {
+        if (nRows == 1) {
+            return s;
+        }
         string *pStr = new string[nRows];
         int num = 2 * nRows - 2;
         for (int j = 0; j < s.length(); j ++) {
@@ -28,8 +31,8 @@ public:
         string result;
         for(int i = 0; i < nRows; i ++) {
             result += pStr[i];
-            cout << pStr[i] << endl;
         }
+        delete[] pStr;
         return result;
     }
 };
@@ -37,9 +40,9 @@ public:
 class ZigZagConversionTest {
 public:
     void test() {
-        string s = "PAYPALISHIRING";
+        string s = "vucftpwctgtwmxnupycfgcuqunublmoiitncklefszbexrampetvhqnddjeqvuygpnkazqfrpjvoaxdpcwmjobmskskfojnewxgxnnofwltwjwnnvbwjckdmeouuzhyvhgvwujbqxxpitcvograiddvhrrdsycqhkleewhxtembaqwqwpqhsuebnvfgvjwdvjjafqzzxlcxdzncqgjlapopkvxfgvicetcmkbljopgtqvvhbgsdvivhesnkqxmwrqidrvmhlubbryktheyentmrobdeyqcrgluaiihveix";
         ZigZagConversion solution;
-        string res = solution.convert(s, 5);
+        string res = solution.convert(s, 247);
         cout << res << endl;
     }
 };

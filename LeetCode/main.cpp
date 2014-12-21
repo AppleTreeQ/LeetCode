@@ -12,10 +12,12 @@
 #include "LongestSubstringWithoutRepeatingCharacters.h"
 #include "AddTwoNumbers.h"
 #include "LongestPalindromicSubstring .h"
+#include "ZigZagConversion.h"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    LongestPalindromicSubstringTest test;
+    //LongestPalindromicSubstringTest test;
+    ZigZagConversionTest test;
     test.test();
     return 0;
 }

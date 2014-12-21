@@ -3,7 +3,7 @@
 //  LeetCode
 //
 //  Created by ipuser on 2014/11/05.
-//  Copyright (c) 2014年 ipuser. All rights reserved.
+//  Copyright (c) 2014年 qzhai. All rights reserved.
 //
 
 #ifndef __LeetCode__TwoSum__

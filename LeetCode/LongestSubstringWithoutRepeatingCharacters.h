@@ -3,7 +3,7 @@
 //  LeetCode
 //
 //  Created by ipuser on 2014/11/06.
-//  Copyright (c) 2014年 ipuser. All rights reserved.
+//  Copyright (c) 2014年 qzhai. All rights reserved.
 //
 
 #ifndef LeetCode_LongestSubstringWithoutRepeatingCharacters_h

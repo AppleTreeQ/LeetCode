@@ -3,7 +3,7 @@
 //  LeetCode
 //
 //  Created by ipuser on 2014/12/21.
-//  Copyright (c) 2014年 ipuser. All rights reserved.
+//  Copyright (c) 2014年 qzhai. All rights reserved.
 //
 
 #ifndef LeetCode_AddTwoNumbers_h
@@ -62,6 +62,7 @@ public:
             p->next = NULL;
             delete result2;
         }
+        delete newl1, newl2;
         return first;
     }
 };

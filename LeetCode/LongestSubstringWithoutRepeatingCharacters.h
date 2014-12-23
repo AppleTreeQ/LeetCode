@@ -24,7 +24,7 @@ public:
         int diff = 0, i;
         for (i = 1; i < s.length(); i ++ ) {
             diff = i - start;
-            std::size_t pos = s.substr(start, diff).find(s.at(i));
+            std::size_t pos = s.substr(start, diff).find(s[i]);
             if ( pos != std::string::npos ) { // find duplicate character.
                 cout << "1start: " << start << ", diff: " << diff << ", i: " << i << endl;
                 if ( diff > length ) {

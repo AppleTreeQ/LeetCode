@@ -8,8 +8,8 @@
 
 #ifndef LeetCode_ZigZagConversion_h
 #define LeetCode_ZigZagConversion_h
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
 using namespace std;
 
 class ZigZagConversion {

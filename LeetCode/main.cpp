@@ -13,11 +13,14 @@
 #include "AddTwoNumbers.h"
 #include "LongestPalindromicSubstring .h"
 #include "ZigZagConversion.h"
+#include "ReverseInteger.h"
+using namespace std;
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     //LongestPalindromicSubstringTest test;
-    ZigZagConversionTest test;
+    //MedianTwoSortedArraysTest test;
+    ReverseIntegerTest test;
     test.test();
     return 0;
 }

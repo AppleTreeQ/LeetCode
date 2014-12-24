@@ -14,13 +14,15 @@
 #include "LongestPalindromicSubstring .h"
 #include "ZigZagConversion.h"
 #include "ReverseInteger.h"
+#include "StringtoInteger.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
-    ReverseIntegerTest test;
+    
+    StringtoIntegerTest test;
     test.test();
     return 0;
 }

@@ -28,6 +28,7 @@
 		D21CEC2F1A47BC7800CE17C8 /* ReverseInteger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseInteger.h; sourceTree = "<group>"; };
 		D21CEC301A4882A500CE17C8 /* StringtoInteger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringtoInteger.h; sourceTree = "<group>"; };
 		D21CEC311A4AE85300CE17C8 /* PalindromeNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PalindromeNumber.h; sourceTree = "<group>"; };
+		D21CEC321A4AE8B500CE17C8 /* LongestPalindromicSubstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LongestPalindromicSubstring.h; sourceTree = "<group>"; };
 		D268F8AA1A0B23E800C09C37 /* LeetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		D268F8AD1A0B23E800C09C37 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		D268F8B41A0B240500C09C37 /* TwoSum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoSum.h; sourceTree = "<group>"; };
@@ -66,13 +67,14 @@
 			isa = PBXGroup;
 			children = (
 				D268F8AD1A0B23E800C09C37 /* main.cpp */,
-				D268F8B41A0B240500C09C37 /* TwoSum.h */,
+				D21CEC2A1A45D58100CE17C8 /* AddTwoNumbers.h */,
+				D21CEC321A4AE8B500CE17C8 /* LongestPalindromicSubstring.h */,
+				D27AE3ED1A0B8B0300DD18E1 /* LongestSubstringWithoutRepeatingCharacters.h */,
 				D27AE3EC1A0B51BA00DD18E1 /* MedianOfTwoSortedArrays.h */,
+				D21CEC311A4AE85300CE17C8 /* PalindromeNumber.h */,
 				D21CEC2F1A47BC7800CE17C8 /* ReverseInteger.h */,
 				D21CEC301A4882A500CE17C8 /* StringtoInteger.h */,
-				D27AE3ED1A0B8B0300DD18E1 /* LongestSubstringWithoutRepeatingCharacters.h */,
-				D21CEC2A1A45D58100CE17C8 /* AddTwoNumbers.h */,
-				D21CEC311A4AE85300CE17C8 /* PalindromeNumber.h */,
+				D268F8B41A0B240500C09C37 /* TwoSum.h */,
 				D21CEC2E1A47370000CE17C8 /* ZigZagConversion.h */,
 			);
 			path = LeetCode;

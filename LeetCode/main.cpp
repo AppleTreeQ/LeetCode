@@ -11,10 +11,11 @@
 #include "MedianOfTwoSortedArrays.h"
 #include "LongestSubstringWithoutRepeatingCharacters.h"
 #include "AddTwoNumbers.h"
-#include "LongestPalindromicSubstring .h"
+#include "LongestPalindromicSubstring.h"
 #include "ZigZagConversion.h"
 #include "ReverseInteger.h"
 #include "StringtoInteger.h"
+#include "PalindromeNumber.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -22,7 +23,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    StringtoIntegerTest test;
+    PalindromeNumberTest test;
     test.test();
     return 0;
 }

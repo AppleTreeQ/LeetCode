@@ -6,8 +6,8 @@
 //  Copyright (c) 2014年 ipuser. All rights reserved.
 //
 
-#ifndef LeetCode__Sum_h
-#define LeetCode__Sum_h
+#ifndef LeetCode__ThreeSum_h
+#define LeetCode__ThreeSum_h
 #include <iostream>
 #include <vector>
 using namespace std;

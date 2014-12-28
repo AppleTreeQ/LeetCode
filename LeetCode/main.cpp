@@ -20,6 +20,8 @@
 #include "RomantoInteger.h"
 #include "LongestCommonPrefix.h"
 #include "3Sum.h"
+#include "3SumClosest.h"
+#include "4Sum.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -27,7 +29,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    ThreeSumTest test;
+    FourSumTest test;
     test.test();
     return 0;
 }

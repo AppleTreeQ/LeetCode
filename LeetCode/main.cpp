@@ -19,6 +19,7 @@
 #include "IntegertoRoman.h"
 #include "RomantoInteger.h"
 #include "LongestCommonPrefix.h"
+#include "3Sum.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -26,7 +27,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    IntegertoRomanTest test;
+    ThreeSumTest test;
     test.test();
     return 0;
 }

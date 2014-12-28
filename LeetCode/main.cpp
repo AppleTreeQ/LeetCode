@@ -22,6 +22,8 @@
 #include "3Sum.h"
 #include "3SumClosest.h"
 #include "4Sum.h"
+#include "LetterCombinationsOfPhoneNumber.h"
+#include "RemoveNthNodeFromEndOfList.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -29,7 +31,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    FourSumTest test;
+    RemoveNthNodeFromEndOfListTest test;
     test.test();
     return 0;
 }

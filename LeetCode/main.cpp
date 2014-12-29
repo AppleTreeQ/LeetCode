@@ -25,6 +25,7 @@
 #include "LetterCombinationsOfPhoneNumber.h"
 #include "RemoveNthNodeFromEndOfList.h"
 #include "ValidParentheses.h"
+#include "GenerateParentheses.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -32,7 +33,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    ValidParenthesesTest test;
+    GenerateParenthesesTest test;
     test.test();
     return 0;
 }

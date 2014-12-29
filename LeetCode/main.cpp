@@ -26,6 +26,7 @@
 #include "RemoveNthNodeFromEndOfList.h"
 #include "ValidParentheses.h"
 #include "GenerateParentheses.h"
+#include "SwapNodesInPairs.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -33,7 +34,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    GenerateParenthesesTest test;
+    SwapNodesInPairsTest test;
     test.test();
     return 0;
 }

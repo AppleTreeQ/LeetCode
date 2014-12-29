@@ -44,7 +44,7 @@ public:
             l1->next = next;
             l1 = next;
         }
-        cout << "WTF" << endl;
+        cout << l1->val << endl;
         
         result = solution.swapPairs(firstforl1);
         while(result != NULL) {

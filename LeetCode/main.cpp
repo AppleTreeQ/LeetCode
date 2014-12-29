@@ -27,6 +27,10 @@
 #include "ValidParentheses.h"
 #include "GenerateParentheses.h"
 #include "SwapNodesInPairs.h"
+#include "RemoveDuplicatesFromSortedArray.h"
+#include "RemoveElement.h"
+#include "ImplementstrStr.h"
+#include "DivideTwoIntegers.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -34,7 +38,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    SwapNodesInPairsTest test;
+    ImplementstrStrTest test;
     test.test();
     return 0;
 }

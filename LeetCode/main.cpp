@@ -38,7 +38,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    ImplementstrStrTest test;
+    DivideTwoIntegersTest test;
     test.test();
     return 0;
 }

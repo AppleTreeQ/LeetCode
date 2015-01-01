@@ -31,6 +31,7 @@
 #include "RemoveElement.h"
 #include "ImplementstrStr.h"
 #include "DivideTwoIntegers.h"
+#include "ReverseNodesInKGroup.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -38,7 +39,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    DivideTwoIntegersTest test;
+    ReverseNodesInKGroupTest test;
     test.test();
     return 0;
 }

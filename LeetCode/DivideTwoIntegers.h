@@ -22,7 +22,7 @@ public:
         else
             isNeg = true;
         int res = 0;
-        if(dividend == INT_MAX)
+        if(dividend == INT_MIN)
         {
             dividend += abs(divisor);
             if(divisor == -1)
@@ -81,7 +81,7 @@ class DivideTwoIntegersTest {
 public:
     void test() {
         DivideTwoIntegers solution;
-        cout << solution.divide(-2147483648, -1) << endl;
+        cout << solution.divide(30, 7) << endl;
     }
 };
 #endif

@@ -32,6 +32,8 @@
 #include "ImplementstrStr.h"
 #include "DivideTwoIntegers.h"
 #include "ReverseNodesInKGroup.h"
+#include "MergeKSortedLists.h"
+#include "NextPermutation.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -39,7 +41,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    ReverseNodesInKGroupTest test;
+    NextPermutationTest test;
     test.test();
     return 0;
 }

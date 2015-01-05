@@ -36,6 +36,7 @@
 #include "NextPermutation.h"
 #include "LongestValidParentheses.h"
 #include "SearchInRotatedSortedArray.h"
+#include "SearchForARange.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -43,7 +44,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    SearchInRotatedSortedArrayTest test;
+    SearchForARangeTest test;
     test.test();
     return 0;
 }

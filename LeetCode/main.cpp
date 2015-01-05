@@ -34,7 +34,8 @@
 #include "ReverseNodesInKGroup.h"
 #include "MergeKSortedLists.h"
 #include "NextPermutation.h"
-
+#include "LongestValidParentheses.h"
+#include "SearchInRotatedSortedArray.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -42,7 +43,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    MergeKSortedListsTest test;
+    SearchInRotatedSortedArrayTest test;
     test.test();
     return 0;
 }

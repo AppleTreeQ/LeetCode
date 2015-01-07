@@ -38,6 +38,8 @@
 #include "SearchInRotatedSortedArray.h"
 #include "SearchForARange.h"
 #include "SearchInsertPosition.h"
+#include "CountAndSay.h"
+#include "CombinationSum.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -45,7 +47,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    SearchInsertPositionTest test;
+    CombinationSumTest test;
     test.test();
     return 0;
 }

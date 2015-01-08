@@ -21,6 +21,7 @@
  */
 #ifndef LeetCode_CombinationSum_h
 #define LeetCode_CombinationSum_h
+#include <queue>
 class CombinationSum {
 public:
     vector<vector<int> > combinationSum(vector<int> &candidates, int target) {
@@ -29,7 +30,11 @@ public:
             return res;
         }
         sort(candidates.begin(), candidates.end());
-        
+        queue<int> my_queue;
+        int sum = 0;
+        for (int i = 0; i < candidates.size(); i ++) {
+            sum += candidates[i];
+        }
         return res;
     }
 };

@@ -30,10 +30,12 @@ public:
             return res;
         }
         sort(candidates.begin(), candidates.end());
-        queue<int> my_queue;
         int sum = 0;
         for (int i = 0; i < candidates.size(); i ++) {
-            sum += candidates[i];
+            while (sum <= target) {
+                sum;
+            }
+            
         }
         return res;
     }

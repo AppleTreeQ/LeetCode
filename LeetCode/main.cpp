@@ -40,6 +40,7 @@
 #include "SearchInsertPosition.h"
 #include "CountAndSay.h"
 #include "CombinationSum.h"
+#include "SingleNumber.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -47,7 +48,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    CombinationSumTest test;
+    SingleNumberTest test;
     test.test();
     return 0;
 }

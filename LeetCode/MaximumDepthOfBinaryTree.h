@@ -24,6 +24,11 @@ public:
     int maxDepth(TreeNode *root) {
         
     }
+    int getDepth(TreeNode *node) {
+        if (left == NULL && right == NULL) {
+            
+        }
+    }
 };
 class MaximumDepthOfBinaryTreeTest {
 public:

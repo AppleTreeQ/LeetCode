@@ -1,34 +1,20 @@
 //
-//  CombinationSum.h
+//  CombinationSumII.h
 //  LeetCode
 //
-//  Created by ipuser on 2015/01/07.
-//  Copyright (c) 2015年 qzhai. All rights reserved.
+//  Created by ipuser on 2015/01/12.
+//  Copyright (c) 2015年 ipuser. All rights reserved.
 //
-/*
- Given a set of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.
- 
- The same repeated number may be chosen from C unlimited number of times.
- 
- Note:
- All numbers (including target) will be positive integers.
- Elements in a combination (a1, a2, … , ak) must be in non-descending order. (ie, a1 ≤ a2 ≤ … ≤ ak).
- The solution set must not contain duplicate combinations.
- For example, given candidate set 2,3,6,7 and target 7,
- A solution set is:
- [7]
- [2, 2, 3]
- */
-#ifndef LeetCode_CombinationSum_h
-#define LeetCode_CombinationSum_h
-#include <queue>
-class CombinationSum {
+
+#ifndef LeetCode_CombinationSumII_h
+#define LeetCode_CombinationSumII_h
+class CombinationSumII {
 public:
     vector<vector<int> > combinationSum(vector<int> &candidates, int target) {
         sort(candidates.begin(), candidates.end());
         return getCombinationSum(candidates, target, 0);
     }
-    vector<vector<int> > getCombinationSum(vector<int> &candidates, int target, int start){
+    vector<vector<int> > getCombinationSum(vector<int> &candidates, int target, int start) {
         vector<vector<int> >  res;
         if (target <= 0)
             return res;
@@ -40,7 +26,7 @@ public:
                 break;
             }
             if (target > candidates[i]) {
-                vector<vector<int> > new_ = getCombinationSum(candidates, target - candidates[i], i);
+                vector<vector<int> > new_ = getCombinationSum(candidates, target - candidates[i], i + 1);
                 for (int j = 0; j < new_.size(); j++) {
                     vector<int> elem = new_[j];
                     elem.push_back(candidates[i]);
@@ -54,17 +40,19 @@ public:
         return res;
     }
 };
-class CombinationSumTest {
+class CombinationSumIITest {
 public:
     void test() {
         vector<int> a;
         a.push_back(1);
         a.push_back(2);
-        a.push_back(3);
+        a.push_back(10);
         a.push_back(6);
         a.push_back(7);
-        CombinationSum solution;
-        vector<vector<int> >  res = solution.combinationSum(a, 7);
+        a.push_back(1);
+        a.push_back(5);
+        CombinationSumII solution;
+        vector<vector<int> >  res = solution.combinationSum(a, 8);
         for (int i = 0; i < res.size(); i ++) {
             vector<int> elem = res[i];
             for (int j = 0; j < elem.size(); j ++) {

@@ -41,6 +41,8 @@
 #include "CountAndSay.h"
 #include "CombinationSum.h"
 #include "SingleNumber.h"
+#include "MaximumDepthOfBinaryTree.h"
+#include "ExcelSheetColumnNumber.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -48,7 +50,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    SingleNumberTest test;
+    ExcelSheetColumnNumberTest test;
     test.test();
     return 0;
 }

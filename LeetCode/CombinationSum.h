@@ -32,8 +32,20 @@ public:
         sort(candidates.begin(), candidates.end());
         int sum = 0;
         for (int i = 0; i < candidates.size(); i ++) {
-            while (sum <= target) {
-                sum;
+            int j = i;
+            vector<int> *temp = new vector<int>;
+            while (true) {
+                sum += candidates[j];
+                temp->push_back(candidates[j]);
+                if (sum == target) {
+                    res.push_back(*temp);
+                    temp->pop_back();
+                    sum -= candidates[j];
+                    j ++;
+                }
+                if (sum > target) {
+                    
+                }
             }
             
         }

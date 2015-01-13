@@ -26,7 +26,7 @@ class CombinationSum {
 public:
     vector<vector<int> > combinationSum(vector<int> &candidates, int target) {
         sort(candidates.begin(), candidates.end());
-        return getCombinationSum(candidates, target, 0);
+        return getCombinationSum2(candidates, target, candidates.size() - 1);
     }
     vector<vector<int> > getCombinationSum(vector<int> &candidates, int target, int start){
         vector<vector<int> >  res;
@@ -49,6 +49,28 @@ public:
             }
             if (target < candidates[i]) {
                 break;
+            }
+        }
+        return res;
+    }
+    vector<vector<int> > getCombinationSum2(vector<int> &candidates, int target, int start){
+        vector<vector<int> >  res;
+        if (target <= 0)
+            return res;
+        for(int i = start; i >= 0; i --) {
+            if (target == candidates[i]){
+                vector<int> elem;
+                elem.push_back(candidates[i]);
+                res.push_back(elem);
+                continue;
+            }
+            if (target > candidates[i]) {
+                vector<vector<int> > new_ = getCombinationSum2(candidates, target - candidates[i], i);
+                for (int j = 0; j < new_.size(); j++) {
+                    vector<int> elem = new_[j];
+                    elem.push_back(candidates[i]);
+                    res.push_back(elem);
+                }
             }
         }
         return res;

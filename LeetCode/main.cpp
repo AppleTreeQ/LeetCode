@@ -45,6 +45,8 @@
 #include "ExcelSheetColumnNumber.h"
 #include "CombinationSum.h"
 #include "CombinationSumII.h"
+#include "EquilibriumIndex.h"
+
 using namespace std;
 
 int main(int argc, const char * argv[]) {

@@ -47,6 +47,9 @@
 #include "CombinationSumII.h"
 #include "EquilibriumIndex.h"
 #include "FirstMissingPositive.h"
+#include "TrappingRainWater.h"
+#include "MultiplyStrings.h"
+#include "JumpGameII.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -54,7 +57,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    FirstMissingPositiveTest test;
+    JumpGameIITest test;
     test.test();
     return 0;
 }

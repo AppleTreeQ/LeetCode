@@ -13,24 +13,39 @@
  */
 #ifndef LeetCode_TrappingRainWater_h
 #define LeetCode_TrappingRainWater_h
+/*
+ 对每个数组中的数，求它的左边最高和右边最高，就知道自己的位置可以放多少水
+ */
 class TrappingRainWater {
 public:
     int trap(int A[], int n) {
         if (n < 3)
             return 0;
-        int up1 = 0; down = 0; up2 = 0;
-        for (int i = 0; i < n; i ++) {
-            if(up1) {
-                ;
+        int *fromleftside = new int[n], *fromrightside = new int[n], res = 0;
+        memset(fromleftside, 0, n * sizeof(int));
+        memset(fromrightside, 0, n * sizeof(int));
+        for(int i = 0; i < n; i ++) {
+            if(i > 0) {
+                fromleftside[i] = fromleftside[i - 1] > A[i - 1] ? fromleftside[i - 1] : A[i - 1];
+                fromrightside[n - i - 1] = fromrightside[n - i] > A[n - i] ? fromrightside[n - i] : A[n - i];
             }
-            
         }
+        fromleftside[0] = 0;
+        fromrightside[n - 1] = 0;
+        for (int i = 0; i < n; i ++) {
+            int height = fromleftside[i] < fromrightside[i] ? fromleftside[i] : fromrightside[i];
+            res += height > A[i] ? (height - A[i]) : 0;
+        }
+        return res;
     }
 };
 class TrappingRainWaterTest {
 public:
     void test() {
-        
+        TrappingRainWater solution;
+        int a[] = {5,4,1,2};
+        int res = solution.trap(a, sizeof(a)/sizeof(int));
+        cout << res << endl;
     }
 };
 #endif

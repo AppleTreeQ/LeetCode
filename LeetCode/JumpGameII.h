@@ -25,8 +25,22 @@ public:
         if (n < 2) {
             return 0;
         }
-        int start = 0, end = 0;
-        
+        int start = 0, end = 0, step = 0, maxRange = 0;
+        while (end < n) {
+	    maxRange = start + A[start];
+            for (int i = start; i <= end; i ++) {
+		if((i + A[i]) >= (n - 1)) {
+	  	    step ++;
+		    return step;
+		}
+		if (maxRange < (i + A[i])) {
+		    maxRange = i + A[i];
+		} 
+	    }
+	    step ++;
+	    start = start + A[start] + 1;
+	    end = maxRange; 
+        }
     }
 };
 class JumpGameIITest {

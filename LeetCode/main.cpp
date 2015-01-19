@@ -49,7 +49,8 @@
 #include "FirstMissingPositive.h"
 #include "TrappingRainWater.h"
 #include "MultiplyStrings.h"
-#include "JumpGameII.h"
+#include "Permutations.h"
+#include "PermutationsII.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -57,7 +58,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    JumpGameIITest test;
+    PermutationsIITest test;
     test.test();
     return 0;
 }

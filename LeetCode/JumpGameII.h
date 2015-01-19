@@ -27,27 +27,28 @@ public:
         }
         int start = 0, end = 0, step = 0, maxRange = 0;
         while (end < n) {
-	    maxRange = start + A[start];
+            maxRange = start + A[start];
             for (int i = start; i <= end; i ++) {
-		if((i + A[i]) >= (n - 1)) {
-	  	    step ++;
-		    return step;
-		}
-		if (maxRange < (i + A[i])) {
-		    maxRange = i + A[i];
-		} 
-	    }
-	    step ++;
-	    start = start + A[start] + 1;
-	    end = maxRange; 
+                if((i + A[i]) >= (n - 1)) {
+                    step ++;
+                    return step;
+                }
+                if (maxRange < (i + A[i])) {
+                    maxRange = i + A[i];
+                }
+            }
+            step ++;
+            start = end + 1;
+            end = maxRange;
         }
+        return step;
     }
 };
 class JumpGameIITest {
 public:
     void test() {
         JumpGameII s;
-        int a[] = {1, 1, 1, 1};
+        int a[] = {1,1,1,1};
         int step = s.jump(a, sizeof(a)/sizeof(int));
         cout << step << endl;
     }

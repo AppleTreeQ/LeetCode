@@ -51,6 +51,8 @@
 #include "MultiplyStrings.h"
 #include "Permutations.h"
 #include "PermutationsII.h"
+#include "Anagrams.h"
+#include "Pow(xn).h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -58,7 +60,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    PermutationsIITest test;
+    Pow_xnTest test;
     test.test();
     return 0;
 }

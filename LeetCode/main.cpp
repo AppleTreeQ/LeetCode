@@ -54,6 +54,9 @@
 #include "Anagrams.h"
 #include "Pow(xn).h"
 #include "N-Queens.h"
+#include "N-QueensII.h"
+#include "MaximumSubarray.h"
+#include "SpiralMatrix.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -61,7 +64,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    NQueensTest test;
+    MaximumSubarrayTest test;
     test.test();
     return 0;
 }

@@ -24,7 +24,6 @@ public:
         return res;
     }
     void findQueens(int rowId, int n, vector<int> columnFlg) {
-        vector<vector<string> > tmpres;
         if (rowId == n) {
             vector<string>queens(n, string(n,'.'));
             for(int i = 0; i < n; i++)

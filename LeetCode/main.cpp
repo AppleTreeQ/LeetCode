@@ -53,6 +53,7 @@
 #include "PermutationsII.h"
 #include "Anagrams.h"
 #include "Pow(xn).h"
+#include "N-Queens.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -60,7 +61,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    Pow_xnTest test;
+    NQueensTest test;
     test.test();
     return 0;
 }

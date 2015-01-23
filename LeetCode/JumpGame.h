@@ -22,17 +22,29 @@
 class JumpGame {
 public:
     bool canJump(int A[], int n) {
-        int start = end = 0;
+        int start = 0, end = 0, max;
         while (end < n) {
-            end = start + A[start];
-            
+            max = start + A[start];
+            for (int i = start; i <= end; i ++) {
+                max = (i + A[i]) > max ? (i + A[i]) : max;
+                if (max >= (n - 1))
+                    return true;
+            }
+            start = end + 1;
+            if (start > max) {
+                return false;
+            }
+            end = max;
         }
+        return true;
     }
 };
 class JumpGameTest {
 public:
     void test() {
-        
+        JumpGame s;
+        int a[] = {3,2,1,1,4};
+        cout << s.canJump(a, sizeof(a) / sizeof(int)) << endl;
     }
 };
 #endif

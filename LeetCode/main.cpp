@@ -59,6 +59,7 @@
 #include "SpiralMatrix.h"
 #include "LengthOfLastWord.h"
 #include "SpiralMatrixII.h"
+#include "JumpGame.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -66,7 +67,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    SpiralMatrixIITest test;
+    JumpGameTest test;
     test.test();
     return 0;
 }

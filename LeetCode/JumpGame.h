@@ -24,6 +24,7 @@ public:
     bool canJump(int A[], int n) {
         int start = end = 0;
         while (end < n) {
+            end = start + A[start];
             
         }
     }

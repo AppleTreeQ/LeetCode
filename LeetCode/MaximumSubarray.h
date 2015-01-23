@@ -35,11 +35,24 @@ public:
         return max;
     }
 };
+class MaximumSubarray2 {
+public:
+    int maxSubArray(int A[], int n) {
+        int max, *sum = new int[n];
+        max = sum[0] = A[0];
+        for (int i = 1; i < n; i ++) {
+            int cursum = sum[i - 1] + A[i];
+            sum[i] = cursum > A[i] ? cursum : A[i];
+            max = max > sum[i] ? max : sum[i];
+        }
+        return max;
+    }
+};
 class MaximumSubarrayTest {
 public:
     void test() {
-        MaximumSubarray s;
-        int A[] = {-1, -2, -3};// {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+        MaximumSubarray2 s;
+        int A[] =  {-2, 1, -3, 4, -1, 2, 1, -5, 4};
         int res = s.maxSubArray(A, sizeof(A)/sizeof(int));
         cout << res << endl;
     }

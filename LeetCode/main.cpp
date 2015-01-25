@@ -66,6 +66,7 @@
 #include "UniquePathsII.h"
 #include "MergeIntervals.h"
 #include "InsertInterval.h"
+#include "PlusOne.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -73,7 +74,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    InsertIntervalTest test;
+    PlusOneTest test;
     test.test();
     return 0;
 }

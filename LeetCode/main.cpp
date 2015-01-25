@@ -64,6 +64,8 @@
 #include "RotateList.h"
 #include "UniquePaths.h"
 #include "UniquePathsII.h"
+#include "MergeIntervals.h"
+#include "InsertInterval.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -71,7 +73,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    UniquePathsIITest test;
+    InsertIntervalTest test;
     test.test();
     return 0;
 }

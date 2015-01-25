@@ -63,6 +63,7 @@
 #include "PermutationSequence.h"
 #include "RotateList.h"
 #include "UniquePaths.h"
+#include "UniquePathsII.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -70,7 +71,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    UniquePathsTest test;
+    UniquePathsIITest test;
     test.test();
     return 0;
 }

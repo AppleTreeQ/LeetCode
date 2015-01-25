@@ -67,6 +67,8 @@
 #include "MergeIntervals.h"
 #include "InsertInterval.h"
 #include "PlusOne.h"
+#include "AddBinary.h"
+#include "Sqrt_X.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -74,7 +76,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    PlusOneTest test;
+    Sqrt_XTest test;
     test.test();
     return 0;
 }

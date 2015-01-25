@@ -42,7 +42,19 @@ public:
         return res;
     }
 };
+//用回溯
 class UniquePaths2 {
+private:
+    int count;
+public:
+    int uniquePaths(int m, int n) {
+        count = 0;
+        vectorvector<int> > table(m, vector<int>(n, 1));
+        
+        return count;
+    }
+};
+class UniquePaths3 {
 private:
     int count;
 public:

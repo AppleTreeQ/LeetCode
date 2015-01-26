@@ -70,6 +70,7 @@
 #include "AddBinary.h"
 #include "Sqrt_X.h"
 #include "SimplifyPath.h"
+#include "SetMatrixZeroes.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -77,7 +78,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    SimplifyPathTest test;
+    SetMatrixZeroesTest test;
     test.test();
     return 0;
 }

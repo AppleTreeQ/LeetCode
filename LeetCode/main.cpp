@@ -72,6 +72,8 @@
 #include "SimplifyPath.h"
 #include "SetMatrixZeroes.h"
 #include "SearchA2DMatrix.h"
+#include "SortColors.h"
+#include "ClimbingStairs.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -79,7 +81,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    SearchA2DMatrixTest test;
+    ClimbingStairsTest test;
     test.test();
     return 0;
 }

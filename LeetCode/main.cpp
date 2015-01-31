@@ -71,6 +71,7 @@
 #include "Sqrt_X.h"
 #include "SimplifyPath.h"
 #include "SetMatrixZeroes.h"
+#include "SearchA2DMatrix.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -78,7 +79,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    SetMatrixZeroesTest test;
+    SearchA2DMatrixTest test;
     test.test();
     return 0;
 }

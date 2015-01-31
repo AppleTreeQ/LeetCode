@@ -16,8 +16,8 @@ public:
         if (matrix.size() == 0)
             return;
         int m = matrix.size(), n = matrix[0].size();
-        int *flag = new int(m + n);
-        memset(flag, 0, sizeof(flag) * sizeof(int));
+        int *flag = new int[m + n];
+        memset(flag, 0, (m + n) * sizeof(int));
         for (int i = 0; i < m; i ++) {
             for (int j = 0; j < n; j ++) {
                 if(matrix[i][j] == 0) {
@@ -39,13 +39,16 @@ public:
                 }
             }
         }
+        delete [] flag;
         return;
     }
 };
 class SetMatrixZeroesTest {
 public:
     void test() {
-        vector<vector<int> > matrix(1,vector<int>(1,1));
+        vector<vector<int> > matrix;
+        vector<int> he(1, 1);
+        matrix.push_back(he);
         SetMatrixZeroes s;
         s.setZeroes(matrix);
         for (int i = 0; i < 1; i ++) {

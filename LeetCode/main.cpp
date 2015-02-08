@@ -78,6 +78,7 @@
 #include "Subsets.h"
 #include "RemoveDuplicatesFromSortedArrayII.h"
 #include "SudokuSolver.h"
+#include "SearchInRotatedSortedArrayII.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -85,7 +86,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    SudokuSolverTest test;
+    SearchInRotatedSortedArrayIITest test;
     test.test();
     return 0;
 }

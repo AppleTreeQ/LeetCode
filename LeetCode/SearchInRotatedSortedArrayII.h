@@ -24,22 +24,20 @@
 class SearchInRotatedSortedArrayII {
 public:
     bool search(int A[], int n, int target) {
-        bool res = false;
-        if (n < 1) {
-            return res;
-        }
+        for (int i = 0; i < n; i ++)
+            if(A[i] == target)
+                return true;
         
-    }
-    bool helper(int A[], int target, int left, int right) {
+        return false;
         
     }
 };
 class SearchInRotatedSortedArrayIITest {
 public:
     void test() {
-        int a[] = {3,1};
+        int a[] = {1,3,1,1,1};
         SearchInRotatedSortedArrayII solution;
-        int res = solution.search(a, sizeof(a)/sizeof(int), 1);
+        int res = solution.search(a, sizeof(a)/sizeof(int), 3);
         cout << res << endl;
     }
 };

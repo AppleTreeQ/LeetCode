@@ -8,11 +8,16 @@
 /*
  Suppose a sorted array is rotated at some pivot unknown to you beforehand.
  
- (i.e., 0 1 2 4 5 6 7 might become 4 5 6 7 0 1 2).
+ (i.e., 0 1 2 4 4 5 6 7 might become 4 5 6 7 0 1 2 4).
  
  You are given a target value to search. If found in the array return its index, otherwise return -1.
  
- duplicate exists in the array.
+ Follow up for "Search in Rotated Sorted Array":
+ What if duplicates are allowed?
+ 
+ Would this affect the run-time complexity? How and why?
+ 
+ Write a function to determine if a given target is in the array.
  */
 #ifndef LeetCode_SearchInRotatedSortedArrayII_h
 #define LeetCode_SearchInRotatedSortedArrayII_h
@@ -20,6 +25,12 @@ class SearchInRotatedSortedArrayII {
 public:
     bool search(int A[], int n, int target) {
         bool res = false;
+        if (n < 1) {
+            return res;
+        }
+        
+    }
+    bool helper(int A[], int target, int left, int right) {
         
     }
 };

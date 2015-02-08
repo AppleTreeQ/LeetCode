@@ -3,7 +3,7 @@
 //  LeetCode
 //
 //  Created by ipuser on 2015/02/04.
-//  Copyright (c) 2015年 ipuser. All rights reserved.
+//  Copyright (c) 2015年 qzhai. All rights reserved.
 //
 
 #ifndef LeetCode_Combinations_h

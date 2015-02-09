@@ -79,6 +79,8 @@
 #include "RemoveDuplicatesFromSortedArrayII.h"
 #include "SudokuSolver.h"
 #include "SearchInRotatedSortedArrayII.h"
+#include "RemoveDuplicatesFromSortedListII.h"
+#include "TextJustification.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -86,7 +88,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    SearchInRotatedSortedArrayIITest test;
+    TextJustificationTest test;
     test.test();
     return 0;
 }

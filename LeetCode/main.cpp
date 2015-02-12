@@ -85,6 +85,9 @@
 #include "MergeSortedArray.h"
 #include "SubsetsII.h"
 #include "LargestRectangleInHistogram.h"
+#include "ScrambleString.h"
+#include "GrayCode.h"
+#include "MinimumWindowSubstring.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -92,7 +95,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    LargestRectangleInHistogramTest test;
+    MinimumWindowSubstringTest test;
     test.test();
     return 0;
 }

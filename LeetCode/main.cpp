@@ -84,6 +84,7 @@
 #include "PartitionList.h"
 #include "MergeSortedArray.h"
 #include "SubsetsII.h"
+#include "LargestRectangleInHistogram.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -91,7 +92,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    PartitionListTest test;
+    LargestRectangleInHistogramTest test;
     test.test();
     return 0;
 }

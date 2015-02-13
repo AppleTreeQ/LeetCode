@@ -37,21 +37,24 @@ public:
         }
         int start = 0, end = 0, window = S.size(), start_bak = -1;
         while (start <= sample.size()-T.size()) {
-            if (end < sample.size()) {
-                map[S[sample[end]]] --;
-            }
             if (isZero(map)) {
                 int e = end < sample.size() ? end : sample.size() - 1;
                 int minus = sample[e] - sample[start] + 1;
-                if (window > minus) {
+                if (window >= minus) {
                     window = minus;
                     start_bak = sample[start];
                 }
                 map[S[sample[start]]] ++;
                 start ++;
-            } else if( end >= sample.size()) {
+                continue;
+            }
+            if( end >= sample.size()) {
                 map[S[sample[start]]] ++;
                 start ++;
+                continue;
+            }
+            if (end < sample.size()) {
+                map[S[sample[end]]] --;
             }
             end ++;
         }
@@ -73,7 +76,7 @@ class MinimumWindowSubstringTest {
 public:
     void test() {
         MinimumWindowSubstring s;
-        string s1 = "A", s2 = "A";
+        string s1 = "cabwefgewcwaefgcf", s2 = "cae";
         cout << s.minWindow(s1, s2) << endl;
     }
 };

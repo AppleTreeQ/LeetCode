@@ -35,8 +35,12 @@ public:
         if (sample.size() < T.size()) {
             return "";
         }
-        int start = 0, end = 0, window = S.size(), start_bak = -1;
+        int start = 0, end = 0, window = S.size(), start_bak = -1, end_bak = -1;
         while (start <= sample.size()-T.size()) {
+            if (end != end_bak && end < sample.size()) {
+                map[S[sample[end]]] --;
+                end_bak = end;
+            }
             if (isZero(map)) {
                 int e = end < sample.size() ? end : sample.size() - 1;
                 int minus = sample[e] - sample[start] + 1;
@@ -52,9 +56,6 @@ public:
                 map[S[sample[start]]] ++;
                 start ++;
                 continue;
-            }
-            if (end < sample.size()) {
-                map[S[sample[end]]] --;
             }
             end ++;
         }

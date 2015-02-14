@@ -27,7 +27,7 @@ public:
             i --;
         }
         if (temp.size() > 0)
-            res.push_back(helper(temp, sum - 1, L));
+            res.push_back(helper2(temp, L));
         return res;
     }
     string helper(vector<string> &vect, int len, int L){
@@ -45,6 +45,23 @@ public:
             }
         }
         return res;
+    }
+    string helper2(vector<string> &vect, int L){
+        string res;
+        int len = 0;
+        for (int i = 0; i < vect.size(); i ++) {
+            res += vect[i];
+            len += vect[i].size();
+        }
+        string s = string(L - len, ' ');
+        return res + s;
+    }
+    string getStr(int l) {
+        string s;
+        for (int i = 0; i < l; i ++) {
+            s += " ";
+        }
+        return s;
     }
 };
 class TextJustificationTest {

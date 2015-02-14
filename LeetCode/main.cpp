@@ -88,6 +88,9 @@
 #include "ScrambleString.h"
 #include "GrayCode.h"
 #include "MinimumWindowSubstring.h"
+#include "DecodeWays.h"
+#include "ReverseLinkedListII.h"
+#include "RestoreIPAddresses.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -95,7 +98,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    MinimumWindowSubstringTest test;
+    RestoreIPAddressesTest test;
     test.test();
     return 0;
 }

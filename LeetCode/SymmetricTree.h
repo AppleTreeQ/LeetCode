@@ -34,32 +34,18 @@
  * };
  */
 class SymmetricTree {
-private:
-    vector<int> num;
 public:
     bool isSymmetric(TreeNode *root) {
-        helper(root);
-        int size = num.size();
-        for (int i = 0; i < size; i ++) {
-            cout << num[i] <<", ";
-        }
-        cout << endl;
-        for (int i = 0; i < size / 2; i ++) {
-            if (num[i] != num[size - i - 1]) {
-                return false;
-            }
-        }
-        return true;
+        if (root == NULL) return true;
+        return compare(root->left, root->right);
     }
-    void helper(TreeNode *root) {
-        if (root == NULL) {
-            num.push_back(-1);
-            return;
-        }
-        helper(root->left);
-        num.push_back(root->val);
-        helper(root->right);
-        return;
+    bool compare(TreeNode* l, TreeNode* r) {
+        if (l == r && l == NULL) return true;
+        if (l == NULL || r == NULL) return false;
+        if (l->val != r->val) return false;
+        if (!compare(l->left, r->right)) return false;
+        if (!compare(l->right, r->left)) return false;
+        return true;
     }
 };
 class SymmetricTreeTest {

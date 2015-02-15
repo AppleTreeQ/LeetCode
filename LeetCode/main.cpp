@@ -91,6 +91,8 @@
 #include "DecodeWays.h"
 #include "ReverseLinkedListII.h"
 #include "RestoreIPAddresses.h"
+#include "UniqueBinarySearchTrees.h"
+#include "UniqueBinarySearchTreesII.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -98,7 +100,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    RestoreIPAddressesTest test;
+    UniqueBinarySearchTreesIITest test;
     test.test();
     return 0;
 }

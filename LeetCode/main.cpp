@@ -93,6 +93,9 @@
 #include "RestoreIPAddresses.h"
 #include "UniqueBinarySearchTrees.h"
 #include "UniqueBinarySearchTreesII.h"
+#include "InterleavingString.h"
+#include "RecoverBinarySearchTree.h"
+#include "SymmetricTree.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -100,7 +103,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    UniqueBinarySearchTreesIITest test;
+    SymmetricTreeTest test;
     test.test();
     return 0;
 }

@@ -105,6 +105,7 @@
 #include "BalancedBinaryTree.h"
 #include "PathSum.h"
 #include "PathSumII.h"
+#include "FlattenBinaryTreeToLinkedList.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -112,7 +113,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    PathSumIITest test;
+    FlattenBinaryTreeToLinkedListTest test;
     test.test();
     return 0;
 }

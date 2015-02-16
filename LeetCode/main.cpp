@@ -97,6 +97,8 @@
 #include "RecoverBinarySearchTree.h"
 #include "SymmetricTree.h"
 #include "BinaryTreeLevelOrderTraversal.h"
+#include "BinaryTreeLevelOrderTraversalII.h"
+#include "BinaryTreeZigzagLevelOrderTraversal.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -104,7 +106,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    BinaryTreeLevelOrderTraversalTest test;
+    BinaryTreeZigzagLevelOrderTraversalTest test;
     test.test();
     return 0;
 }

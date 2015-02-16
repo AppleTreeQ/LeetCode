@@ -99,6 +99,10 @@
 #include "BinaryTreeLevelOrderTraversal.h"
 #include "BinaryTreeLevelOrderTraversalII.h"
 #include "BinaryTreeZigzagLevelOrderTraversal.h"
+#include "ConstructBinaryTreeFromPreorderAndInorderTraversal.h"
+#include "ConstructBinaryTreeFromInorderAndPostorderTraversal.h"
+#include "ConvertSortedListToBinarySearchTree.h"
+#include "BalancedBinaryTree.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -106,7 +110,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    BinaryTreeZigzagLevelOrderTraversalTest test;
+    BalancedBinaryTreeTest test;
     test.test();
     return 0;
 }

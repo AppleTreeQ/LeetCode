@@ -106,6 +106,11 @@
 #include "PathSum.h"
 #include "PathSumII.h"
 #include "FlattenBinaryTreeToLinkedList.h"
+#include "PopulatingNextRightPointersInEachNode.h"
+#include "PopulatingNextRightPointersInEachNodeII.h"
+#include "PascalsTriangle.h"
+#include "PascalsTriangleII.h"
+#include "Triangle.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -113,7 +118,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    FlattenBinaryTreeToLinkedListTest test;
+    TriangleTest test;
     test.test();
     return 0;
 }

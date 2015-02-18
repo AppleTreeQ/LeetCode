@@ -20,10 +20,8 @@
 class FlattenBinaryTreeToLinkedList {
 public:
     void flatten(TreeNode *root) {
-        if (root == NULL)
-            return;
-        if (root->left == NULL && root->right == NULL)
-            return;
+        if (root == NULL) return;
+        if (root->left == NULL && root->right == NULL) return;
         if (root->left == NULL) {
             flatten(root->right);
             return;
@@ -46,6 +44,35 @@ public:
         cur->right = temp;
         return;
     }
+    void flatten2(TreeNode *root) {
+        helper(root);
+        return;
+    }
+    TreeNode * helper(TreeNode *root) {
+        if (root == NULL) return NULL;
+        if (root->left == NULL && root->right == NULL) {
+            return root;
+        }
+        if (root->left == NULL && root->right != NULL) {
+            return helper(root->right);
+        }
+        if (root->left != NULL && root->right == NULL) {
+            TreeNode * tln = helper(root->left);
+            root->right = root->left;
+            root->left = NULL;
+            return tln;
+        }
+        if (root->left != NULL && root->right != NULL) {
+            TreeNode *tln1 = helper(root->left);
+            TreeNode *tln2 = helper(root->right);
+            TreeNode *temp = root->right;
+            root->right = root->left;
+            root->left = NULL;
+            tln1->right = temp;
+            return tln2;
+        }
+        return NULL;
+    }
 };
 class FlattenBinaryTreeToLinkedListTest {
 public:
@@ -54,7 +81,7 @@ public:
         TreeNode * root = new TreeNode(1);
         root->left = new TreeNode(2);
         //root->right = new TreeNode(3);
-        s.flatten(root);
+        s.flatten2(root);
         TreeNode* cur = root;
         while (cur != NULL) {
             cout << cur->val << "->";

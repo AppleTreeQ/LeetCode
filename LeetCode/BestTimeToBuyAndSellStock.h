@@ -15,7 +15,16 @@
 class BestTimeToBuyAndSellStock {
 public:
     int maxProfit(vector<int> &prices) {
-        
+        if (prices.size() < 1)
+            return 0;
+        int size = prices.size();
+        int minPrice = prices[0];
+        int profit = 0;
+        for (int i = 1; i < size; i ++) {
+            profit = (prices[i]-minPrice) > profit ? (prices[i]-minPrice) : profit;
+            minPrice = minPrice < prices[i] ? minPrice : prices[i];
+        }
+        return profit;
     }
 };
 class BestTimeToBuyAndSellStockTest {

@@ -111,6 +111,8 @@
 #include "PascalsTriangle.h"
 #include "PascalsTriangleII.h"
 #include "Triangle.h"
+#include "BestTimeToBuyAndSellStockII.h"
+#include "BestTimeToBuyAndSellStockIII.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -118,7 +120,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    TriangleTest test;
+    BestTimeToBuyAndSellStockIITest test;
     test.test();
     return 0;
 }

@@ -21,20 +21,16 @@ public:
         if (prices.size() < 1)
             return 0;
         int size = prices.size();
-        vector<vector<int> > res(vector(size, 0), size);
+        vector<vector<int> > res(size, vector<int>(size, 0));
         int maxprofit = 0;
-        memset(diff, 0, sizeof(int)*size);
         //1,2,5,6,8
-        diff[0] = 0;
         for (int i = 0; i < size; i ++) {
             for (int j = i; j < size; j ++) {
-                
+                res[i][j] = prices[j] - prices[i];
             }
-            diff[i] = prices[i] - prices[i - 1];
         }
         for (int i = 0; i < size; i ++) {
-            if (diff[i] > 0)
-                maxprofit += diff[i];
+            
         }
         return maxprofit;
     }

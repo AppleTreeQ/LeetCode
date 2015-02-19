@@ -113,6 +113,7 @@
 #include "Triangle.h"
 #include "BestTimeToBuyAndSellStockII.h"
 #include "BestTimeToBuyAndSellStockIII.h"
+#include "WordLadder.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -120,7 +121,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    BestTimeToBuyAndSellStockIITest test;
+    WordLadderTest test;
     test.test();
     return 0;
 }

@@ -121,7 +121,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    WordLadderTest test;
+    BestTimeToBuyAndSellStockIIITest test;
     test.test();
     return 0;
 }

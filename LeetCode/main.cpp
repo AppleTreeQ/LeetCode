@@ -114,6 +114,7 @@
 #include "BestTimeToBuyAndSellStockII.h"
 #include "BestTimeToBuyAndSellStockIII.h"
 #include "WordLadder.h"
+#include "BinaryTreeMaximumPathSum.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -121,7 +122,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    BestTimeToBuyAndSellStockIIITest test;
+    BinaryTreeMaximumPathSumTest test;
     test.test();
     return 0;
 }

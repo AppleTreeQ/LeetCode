@@ -116,6 +116,11 @@
 #include "WordLadder.h"
 #include "BinaryTreeMaximumPathSum.h"
 #include "PalindromePartitioning.h"
+#include "PalindromePartitioningII.h"
+//#include "SurroundedRegions.h"
+#include "GasStation.h"
+#include "CloneGraph.h"
+#include "Candy.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -123,7 +128,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    PalindromePartitioningTest test;
+    CandyTest test;
     test.test();
     return 0;
 }

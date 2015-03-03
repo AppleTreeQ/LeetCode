@@ -121,6 +121,12 @@
 #include "GasStation.h"
 #include "CloneGraph.h"
 #include "Candy.h"
+#include "SingleNumberII.h"
+#include "CopyListWithRandomPointer.h"
+#include "WordBreak.h"
+#include "WordBreakII.h"
+#include "LinkedListCycle.h"
+#include "LinkedListCycleII.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -128,7 +134,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    CandyTest test;
+    LinkedListCycleIITest test;
     test.test();
     return 0;
 }

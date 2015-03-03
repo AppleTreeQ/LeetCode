@@ -127,6 +127,8 @@
 #include "WordBreakII.h"
 #include "LinkedListCycle.h"
 #include "LinkedListCycleII.h"
+#include "BinaryTreePreorderTraversal.h"
+#include "ReorderList.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -134,7 +136,7 @@ int main(int argc, const char * argv[]) {
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    LinkedListCycleIITest test;
+    ReorderListTest test;
     test.test();
     return 0;
 }

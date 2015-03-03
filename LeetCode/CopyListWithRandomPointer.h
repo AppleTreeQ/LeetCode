@@ -71,10 +71,10 @@ public:
         return pre;
     }
 };
-class CopyListWithRandomPointer2 {
+class CopyListWithRandomPointer3 {
 public:
     RandomListNode *copyRandomList(RandomListNode *head) {
-        
+        return NULL;
     }
 };
 class CopyListWithRandomPointerTest {

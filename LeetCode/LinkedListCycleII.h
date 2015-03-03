@@ -37,7 +37,7 @@ public:
         return NULL;
     }
     ListNode *helper(ListNode *node1, ListNode *node2) {
-        
+        return NULL;
     }
 };
 class LinkedListCycleIITest {

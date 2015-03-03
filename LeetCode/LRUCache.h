@@ -8,6 +8,24 @@
 
 #ifndef LeetCode_LRUCache_h
 #define LeetCode_LRUCache_h
-
-
+class LRUCache{
+public:
+    LRUCache(int capacity) {
+        
+    }
+    
+    int get(int key) {
+        
+    }
+    
+    void set(int key, int value) {
+        
+    }
+};
+class LRUCacheTest{
+public:
+    void test() {
+        
+    }
+};
 #endif

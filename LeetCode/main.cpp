@@ -129,14 +129,98 @@
 #include "LinkedListCycleII.h"
 #include "BinaryTreePreorderTraversal.h"
 #include "ReorderList.h"
+#include "LRUCache.h"
+#include "InsertionSortList.h"
 using namespace std;
-
 int main(int argc, const char * argv[]) {
     // insert code here...
     //LongestPalindromicSubstringTest test;
     //MedianTwoSortedArraysTest test;
     
-    ReorderListTest test;
+    InsertionSortListTest test;
     test.test();
     return 0;
 }
+
+/*#include<iostream>
+#include<algorithm>
+#include<vector>
+using namespace std;
+struct CharAndFrequence
+{
+    char cha;
+    int freq;
+    CharAndFrequence(): cha(0), freq(0) {}
+};
+bool mycompare (CharAndFrequence i,CharAndFrequence j) { return (i.freq > j.freq); }
+int main()
+{
+    
+}
+int main()
+{
+    string input = "baba";
+//    cin >> input;
+    vector<CharAndFrequence> res;
+    for (int i = 0; i < 26; i ++) {
+        CharAndFrequence temp;
+        temp.cha = 'a' + i;
+        temp.freq = 0;
+        res.push_back(temp);
+    }
+    int length = input.size();
+    for (int i = 0; i < length; i ++) {
+        if ((input[i] - 'a') >=0 && (input[i] - 'a') < 26) {
+            int index = input[i] - 'a';
+            res[index].freq ++;
+        }
+        if ((input[i] - 'A') >=0 && (input[i] - 'A') < 26) {
+            int index = input[i] - 'A';
+            res[index].freq ++;
+        }
+    }
+    std::sort(res.begin(), res.end(), mycompare);
+    for (int i = 0; i < res.size(); i ++) {
+        if(res[i].freq > 0)
+            cout << res[i].cha << endl;
+    }
+    cout << endl;
+    return 0;
+}
+*/
+/*#include <iostream>
+#include <string>
+using namespace std;
+
+double getPassCount(int id, int n, vector<int>& students, vector<string>& fm) {
+    students[id] = 1;
+    double total = 0;
+    int count = 0;
+    for (int i = 0; i < n; i++) {
+        if (fm[id][i] == 'Y' && students[i] == 0) {
+            total += getPassCount(i, n, students, fm);
+            count++;
+        }
+    }
+    students[id] = 0;
+    if (count > 0) {
+        return 1 + total / count;
+    }
+    return 1;
+}
+
+int main() {
+    int n = 2;
+   // cin >> n;
+    vector<string> friendMap;
+    vector<int> students;
+    for (int i = 0; i < n; i++) {
+        string line = "YY";
+        //cin >> line;
+        friendMap.push_back(line);
+        students.push_back(0);
+    }
+    cout << getPassCount(0, n, students, friendMap) ;
+    return 0;
+}
+*/

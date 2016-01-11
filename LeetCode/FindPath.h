@@ -10,6 +10,8 @@
 #define __LeetCode__FindPath__
 
 #include <stdio.h>
-
+using namespace std;
+class FindPath {
+};
 
 #endif /* defined(__LeetCode__FindPath__) */
